@@ -25,27 +25,44 @@ Select stack for packages.
 
 options:
   -h, --help            show this help message and exit
+
   -w WIDTH, --width WIDTH
+
                         Width (cm)
+
   -e HEIGHT, --height HEIGHT
+
                         Height (cm)
+
   -l LENGHT, --lenght LENGHT
+
                         Lenght (cm)
+
   -m MASS, --mass MASS  Mass (cm)
+
 
 # Examples
 
 python main.py -w 200 -e 10 -l 10 -m 10
 
 2025-07-31 11:14:58-0300        [main]  [INFO]  Width:             200.0
+
 2025-07-31 11:14:58-0300        [main]  [INFO]  Height:            10.0
+
 2025-07-31 11:14:58-0300        [main]  [INFO]  Lenght:            10.0
+
 2025-07-31 11:14:58-0300        [main]  [INFO]  Mass:              10.0
+
 2025-07-31 11:14:58-0300        [sort]  [INFO]  Sorting packages...
+
 2025-07-31 11:14:58-0300        [sort]  [INFO]  Package Heavy=False and Bulky=True
+
 2025-07-31 11:14:58-0300        [main]  [INFO]  Stack Selected: SPECIAL
 
 
+
 python main.py -w 200 -e 10 -l 10 -m -10
+
 usage: main.py [-h] -w WIDTH -e HEIGHT -l LENGHT -m MASS
+
 main.py: error: argument -m/--mass: -10 must be >0.
