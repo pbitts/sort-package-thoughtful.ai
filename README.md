@@ -21,6 +21,7 @@ You must dispatch the packages in the following stacks:
 
 # Usage
 
+~~~bash
 Select stack for packages.
 
 options:
@@ -39,11 +40,16 @@ options:
                         Lenght (cm)
 
   -m MASS, --mass MASS  Mass (cm)
+~~~
 
 
 # Examples
 
+~~~bash
 python main.py -w 200 -e 10 -l 10 -m 10
+~~~
+
+~~~bash
 
 2025-07-31 11:14:58-0300        [main]  [INFO]  Width:             200.0
 
@@ -58,11 +64,15 @@ python main.py -w 200 -e 10 -l 10 -m 10
 2025-07-31 11:14:58-0300        [sort]  [INFO]  Package Heavy=False and Bulky=True
 
 2025-07-31 11:14:58-0300        [main]  [INFO]  Stack Selected: SPECIAL
+~~~
 
 
-
+~~~bash
 python main.py -w 200 -e 10 -l 10 -m -10
+~~~
 
+~~~bash
 usage: main.py [-h] -w WIDTH -e HEIGHT -l LENGHT -m MASS
 
 main.py: error: argument -m/--mass: -10 must be >0.
+~~~
